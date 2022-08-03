@@ -103,13 +103,50 @@ console.log(typeof time); // just check
 let time1 = parseInt(time); // переводимо дані в числове значення
 console.log(time1); // just check
 
-if(time1>=23||time1>=0||time1<=5){             // створюємо умови для виведення привітання відповідного до часу доби
+if(time1>=23||time1 ==0||time1<5){             // створюємо умови для виведення привітання відповідного до часу доби
     alert('Good Night');
-}else if(time1>=5||time1<=11){
+}else if(time1==5||time1<=11){
     alert('Good Morning');
-}else if(time1>=11||time1<=17){
+}else if(time1>=11&&time1<=17){
     alert('Good Day');
 }else if(time1>=17||time1<23){
     alert('Good Evening');
 };
+
+// OR
+switch(time1){
+    case 0:
+    case 23:
+    case 1:
+    case 3:
+    case 4:
+        alert('Good Night');
+        break;
+    case 5:
+    case 6:
+    case 7:
+    case 8:
+    case 9:
+    case 10:
+        alert('Good Morning');
+        break;
+    
+    case 11:
+    case 12:
+    case 13:
+    case 14:
+    case 15:
+    case 16:
+        alert('Good Day');
+        break;
+
+    case 17:
+    case 18:
+    case 19:
+    case 20:
+    case 21:
+    case 22:
+        alert('Good Evening');
+        break;
+}
 
