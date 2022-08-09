@@ -88,9 +88,10 @@ giveLast([5,1,2,6,7,],-2)
 
 let sentence = "even if i stole this i still did my job";
 let words = sentence.split(" ");
-
+function toUp(){
 for (let i = 0; i < words.length; i++) {
     words[i] = words[i][0].toUpperCase() + words[i].substr(1);
 }
-
 console.log(words.join(" "));
+}
+toUp();
